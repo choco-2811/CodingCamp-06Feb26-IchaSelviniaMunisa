@@ -1,0 +1,58 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <!-- Form Input -->
+        <form id="todo-form">
+            <div class="form-group">
+                <input type="text" id="todo-input" placeholder="Masukkan tugas..." required>
+            </div>
+
+            <div class="form-group">
+                <input type="date" id="date-input" required>
+            </div>
+
+            <button type="submit">Tambah</button>
+        </form>
+
+        <!-- Filter -->
+        <div class="filter-section">
+            <select id="filter">
+                <option value="all">Semua</option>
+                <option value="completed">Selesai</option>
+                <option value="uncompleted">Belum Selesai</option>
+            </select>
+        </div>
+
+        <!-- List -->
+        <ul id="todo-list"></ul>
+
+        <!-- Footer Branding -->
+        <footer class="footer">
+            <p>Made with ❤️ by Icha</p>
+
+            <a href="https://www.instagram.com/csllvn?igsh=ZnY0MTU2YzJmdDM4"
+               target="_blank"
+               class="instagram-link">
+               Instagram
+            </a>
+
+            <p>© 2026 Coding Camp</p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
